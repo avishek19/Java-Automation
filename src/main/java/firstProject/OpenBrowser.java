@@ -11,7 +11,7 @@ public class OpenBrowser {
     public static void main(String[] args) throws InterruptedException {
         final long milliseconds = 1000000;
         long startTime = new Date().getTime();
-        int viewCount=2;
+        int viewCount=2; //* Update this count as many times as you want open url
         for (int i=0; i<viewCount; i++) {
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/chromedriver");
             WebDriver driver = new ChromeDriver();
