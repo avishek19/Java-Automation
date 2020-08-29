@@ -11,4 +11,4 @@ Pre-requiste:
 5) Update viewCount as expected
 6) Run the Project
 
-**** No Need to downlaod any drivers, this project will set to use Chromdriver
+**** No Need to downlaod any drivers, this project is set to use Chromdriver
