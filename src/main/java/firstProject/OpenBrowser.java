@@ -2,7 +2,6 @@ package firstProject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
@@ -11,11 +10,10 @@ import java.util.concurrent.TimeUnit;
 public class OpenBrowser {
     public static void main(String[] args) throws InterruptedException {
         final long milliseconds = 1000000;
-        String exePath="//Users//avishek//Downloads//chromedriver";
         long startTime = new Date().getTime();
-        int viewCount=10;
-        for (int i=1; i<viewCount; i++) {
-            System.setProperty("webdriver.chrome.driver", exePath);
+        int viewCount=2;
+        for (int i=0; i<viewCount; i++) {
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/chromedriver");
             WebDriver driver = new ChromeDriver();
             driver.get("https://www.quora.com/Is-it-worth-doing-a-post-graduate-diploma-degree-in-data-analytics-from-IIIT-Bangalore/answer/Avishek-Saha-6");
             driver.quit();
