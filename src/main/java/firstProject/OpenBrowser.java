@@ -16,8 +16,8 @@ public class OpenBrowser {
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/resources/chromedriver");
             WebDriver driver = new ChromeDriver();
             driver.get("https://www.quora.com/Is-it-worth-doing-a-post-graduate-diploma-degree-in-data-analytics-from-IIIT-Bangalore/answer/Avishek-Saha-6");
-            driver.quit();
             Thread.sleep(500);
+            driver.quit();
         }
         long endTime = new Date().getTime();
         long minutes = TimeUnit.MILLISECONDS.toMinutes(endTime-startTime);
